@@ -26,3 +26,34 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+
+void print_arrow(int triangleLCol, int trianglesize, int squareLcol, int squaresize){
+  for (int row = 0; row <= trianglesize; row++) {
+
+    int minCol = triangleLCol + trianglesize - row, maxCol = triangleLCol + trianglesize + row;
+
+    int col;
+
+    for (col = 0; col < minCol; col++) putchar(' ');
+
+    for (       ; col <= maxCol; col++) putchar('*');
+
+    putchar('\n');
+      }
+    
+  int i, j;
+
+  int endCol = squareLcol + squaresize;
+
+  for (int row = 0; row < squaresize; row++){
+
+    int col;
+
+    for (col = 0; col < squareLcol; col++) putchar(' ');
+
+    for (       ; col < endCol;  col++) putchar('*');
+
+    putchar('\n');
+    
+}
+}
