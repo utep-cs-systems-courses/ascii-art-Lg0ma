@@ -5,7 +5,6 @@
 void print_char_11x16(char c)
 
 {
-
   c -= 0x20;
 
   for (char row = 0; row < 11; row++) {
@@ -23,6 +22,7 @@ void print_char_11x16(char c)
     putchar('\n');
 
   }
+}
 
   
 void print_char_5x7(char c)
